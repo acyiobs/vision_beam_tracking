@@ -1,6 +1,6 @@
 load('test_acc.mat');
 figure;
-bar([test_acc.top1(1), test_acc.top5(1),test_acc.top3(1), test_acc.top5(3)], 'FaceColor', "#D95319",'BarWidth',0.5)
+bar([test_acc.top1(1), test_acc.top5(1),test_acc.top1(3), test_acc.top5(3)], 'FaceColor', "#D95319",'BarWidth',0.5)
 grid on;
 row1 = {'Future beam 1' 'Future beam 1' 'Future beam 3' 'Future beam 3'};
 row2 = {'Top1' 'Top5' 'Top1' 'Top5'};

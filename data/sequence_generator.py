@@ -246,7 +246,7 @@ x = TimeSeriesGenerator(csv_file=csv_file,
                         seed=rng_seed,
                         delay=delay,
                         label_function=label_function,
-                        save_filename=None)
+                        save_filename='scenario8_series.csv')
 
 x.save_file(file_tag='full', data_path_csv_column=data_path_csv_column, label_path_csv_column=label_path_csv_column,
             label_name=label_name, shuffled=False, save_y_ind=save_y_ind)

@@ -18,8 +18,8 @@ def train_model(num_epoch=1000, if_writer=False, portion=1.0, num_beam=64):
     num_classes = num_beam + 1
     batch_size = 8
     val_batch_size = 64
-    train_dir = "data/scenario8/DEV[95%]/scenario8_series_bbox_train.csv"
-    val_dir = "data/scenario8/DEV[95%]/scenario8_series_bbox_test.csv"
+    train_dir = "data/scenario8_series_bbox_train.csv"
+    val_dir = "data/scenario8_series_bbox_test.csv"
     train_loader = DataLoader(
         DataFeed(train_dir, num_beam=num_beam), batch_size=batch_size, shuffle=True
     )
@@ -252,5 +252,5 @@ if __name__ == "__main__":
         num_epoch=num_epoch, if_writer=True, portion=1.0, num_beam=64
     )
     print(val_acc)
-    savemat('plot/test_acc__.mat',{'test_acc':val_acc})
+    savemat('plot/test_acc.mat',{'test_acc':val_acc})
     

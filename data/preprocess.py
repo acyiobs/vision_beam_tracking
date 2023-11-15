@@ -32,11 +32,11 @@ def preprocess(in_path, out_path):
 
 
 #%% training dataset
-csv_file_path = 'scenario8/DEV[95%]/scenario8_series_train.csv'
-csv_save_path = 'scenario8/DEV[95%]/scenario8_series_bbox_train.csv'
+csv_file_path = 'scenario8_series_train.csv'
+csv_save_path = 'scenario8_series_bbox_train.csv'
 preprocess(csv_file_path, csv_save_path)
 
 #%% test dataset
-csv_file_path = 'scenario8/DEV[95%]/scenario8_series_test.csv'
-csv_save_path = 'scenario8/DEV[95%]/scenario8_series_bbox_test.csv'
+csv_file_path = 'scenario8_series_test.csv'
+csv_save_path = 'scenario8_series_bbox_test.csv'
 preprocess(csv_file_path, csv_save_path)
