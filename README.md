@@ -8,7 +8,7 @@ Millimeter-wave (mmWave) and terahertz (THz) communications require beamforming 
 
 # Instruction to Reproduce the Results
 
-1. Data preprocessing (optional)
+1. Data preprocessing (optional, the preprocessed data CSV files have been included to ./data)
    1. Download and unzip [DeepSense Scenario 8](https://www.deepsense6g.net/scenario-8/) to ./data 
    2. Download and unzip [pre-generated bounding boxes](https://www.dropbox.com/scl/fi/n1cqbxvpzxl9j4zhhgs3q/camera_data_bbox.zip?rlkey=cibk7natbsm2axb8gzrvz12rl&dl=0) to ./data/scenario8/DEV[95%]/unit1
    3. Run ./data/sequence_generator.py
