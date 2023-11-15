@@ -252,3 +252,5 @@ if __name__ == "__main__":
         num_epoch=num_epoch, if_writer=True, portion=1.0, num_beam=64
     )
     print(val_acc)
+    savemat('plot/test_acc.mat',{'test_acc':val_acc})
+    
